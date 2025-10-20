@@ -107,4 +107,16 @@ console.log(weight());
 
 //QUESTION NO 12
 
-hasan shah
+function calculateBmi(age, weight, heightCm) {
+    let heightM = heightCm / 100;
+    if (age >= 20) {
+        if (weight > 0 && heightM > 0) {
+            let bmi = weight / (heightM * heightM);
+            return bmi.toFixed(2);
+        }
+    }
+    else{
+        console.log("Enter age older than 20");
+    }
+}
+console.log(calculateBmi(23,43,166));
