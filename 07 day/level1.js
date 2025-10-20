@@ -107,3 +107,4 @@ console.log(weight());
 
 //QUESTION NO 12
 
+hasan shah
