@@ -50,4 +50,49 @@ const users = {
   }
 }
 
+//QUESTION NO 1
 
+let personWithSkills = ''
+let maxSkills = 0
+
+for (let userName in users ) {
+    let existingSkills = users[userName].skills.length
+    if (existingSkills > maxSkills) {
+        maxSkills = existingSkills
+        personWithSkills = userName
+    }
+    
+}
+console.log(personWithSkills);
+
+//QUESTION NO 2
+
+let userPoints = ''
+let loggedInUser = ''
+
+for (const userName in users) {
+    const user = users[userName]
+    if (user.isLoggedIn == true) {
+        loggedInUser++
+    }   
+    if (user.points >= 50) {
+        userPoints++
+        
+    }
+}
+console.log(`number of users logged in:${loggedInUser}`);
+
+console.log(`number of users having points euqal or greater than 50: ${userPoints}`);
+
+//QUESTION NO 3
+
+let mernSrackDevelopers = []
+
+for (const userName in users) {
+    const skills = users[userName].skills
+    if (skills.includes('MongoDB') && skills.includes('Node') && skills.includes('Express') && skills.includes('React')) {
+        mernSrackDevelopers.push(userName)
+    }
+}
+
+console.log(mernSrackDevelopers);
