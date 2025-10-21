@@ -96,3 +96,48 @@ for (const userName in users) {
 }
 
 console.log(mernSrackDevelopers);
+
+//QUESTION NO 4
+
+const users2 = Object.assign({}, users)
+users2.hasan = {
+    email: 'hasan@gmail.com',
+    skills: [
+        'HTML',
+        'TAILWIND',
+        'JAVASCRIPT'
+    ],
+    age: 20,
+    points: 20
+}
+console.log(users2);
+
+//QUESTION NO 5
+
+const properties = Object.keys(users)
+console.log(properties);
+
+//QUESTION NO 6
+
+const allUserData = Object.values(users)
+console.log(allUserData);
+
+//QUESTION NO 7
+
+const countries = {
+    name: 'India',
+    capital: 'Delhi',
+    population: '145.09 crores',
+    languages: [
+        'HINDI',
+        'MARATHI',
+        'ENGLISH',
+        'KANNADA',
+        'TELUGU'
+    ]
+}
+console.log(countries.name);
+console.log(countries.capital);
+console.log(countries.population);
+console.log(countries.languages);
+
