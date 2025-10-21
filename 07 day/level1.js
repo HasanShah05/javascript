@@ -119,4 +119,4 @@ function calculateBmi(age, weight, heightCm) {
         console.log("Enter age older than 20");
     }
 }
-console.log(calculateBmi(23,43,166));
+console.log(calculateBmi(23,43,166));f
