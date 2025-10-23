@@ -60,3 +60,29 @@ for (const key in programming) {
     
 }
 
+const coding = ['java','javascript','python','ruby','cpp']
+
+coding.forEach(  (item, index, arr) => {
+    // console.log(item, index, arr);
+    
+} )
+
+const myCoding = [
+    {
+        languageName: 'javascript',
+        languageFile: 'js'
+    },
+    {
+        languageName: 'java',
+        languageFile: 'java'
+    },
+    {
+        languageName: 'python',
+        languageName: 'py'
+    }
+]
+
+myCoding.forEach(  (item) => {
+    console.log(item.languageName);
+    
+} )
