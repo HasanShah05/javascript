@@ -86,3 +86,24 @@ myCoding.forEach(  (item) => {
     console.log(item.languageName);
     
 } )
+
+const numbers = [1,2,3,4,5]
+const number2 = [6,7,8,9,10]
+const sumArr = arr => {
+    let sum = 0
+    arr.forEach(function(element){
+    sum += element
+
+    }
+)
+return sum
+}
+
+console.log(sumArr(number2));
+
+function sayHello() {
+    console.log("hello bhailog");
+    
+}
+// setInterval(sayHello,1000)
+setTimeout(sayHello, 3000)
