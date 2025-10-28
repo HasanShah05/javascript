@@ -119,4 +119,49 @@ function calculateBmi(age, weight, heightCm) {
         console.log("Enter age older than 20");
     }
 }
-console.log(calculateBmi(23,43,166));f
+console.log(calculateBmi(23,43,166));
+
+//QUESTION NO 13
+
+function checkSeason(month) {
+    switch (month.toLowerCase()) {
+        case 'december':
+        case 'january':
+        case 'febuary':
+            return 'Winter'
+        case 'march':
+        case 'april':
+        case 'may':
+            return 'Spring'
+        case 'june':
+        case 'july':
+        case 'august':
+            return 'Summer'
+        case 'september':
+        case 'october':
+        case 'november':
+            return 'Autumn'
+        default:
+            return 'Invalid Month'
+    }
+}
+
+console.log(checkSeason('jUne'));
+
+//QUESTION NO 14
+
+function findMax(num1, num2, num3) {
+    if (num1 > num2 && num1 > num3) {
+        return num1
+    }
+    if (num2 > num1 && num2 > num3) {
+        return num2
+    }
+    if (num3 > num1 && num3 > num2) {
+        return num3
+    }   
+}
+
+console.log(findMax(4,3,2));
+console.log(findMax(2,4,3));
+console.log(findMax(1,2,3));

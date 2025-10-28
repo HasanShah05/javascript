@@ -15,6 +15,8 @@ console.log(number[0])
 console.log(number[2])
 console.log(number[4])
 
+//question no 5
+
 const info = [
   'hasan',
   'shah',
@@ -23,7 +25,6 @@ const info = [
   {education: 'Bscit'},
   {college: 'lala lajpat rai college'}
 ]
-console.log(info)
 console.log(info.length)
 
 //question no 6
@@ -64,15 +65,13 @@ console.log(itCompanies.toString())
 
 //question no 13
 
-// let companyName = prompt('Enter any it company name')
-// if(itCompanies.includes(companyName)){
-//   console.log(companyName)
-// }
-// else{
-//   console.log('Company not found')
-// }
-
-//question no 14
+let companyName = 'Google'
+if(itCompanies.includes(companyName)){
+  console.log(companyName)
+}
+else{
+  console.log('Company not found')
+}
 
 //question no 15
 

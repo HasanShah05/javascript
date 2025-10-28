@@ -16,12 +16,22 @@ const products = [
 // it itrates over each elemnt of an array and executes provided callback function for each element
 
 //MAP
-// 
+// Transforms each element in an array. and then returns the elements as transformed.
 
 //FILTER
 //it filters the array and gives a new array which is formed when the condition is matched.
 
 //REDUCE
+//
+
+//QUESTION NO 2
+const callback = function (element) {
+  console.log(element);
+};
+
+const numbers1 = [1, 2, 3, 4];
+numbers.forEach(callback);
+
 
 
 //QUESTION NO 3
