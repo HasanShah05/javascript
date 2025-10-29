@@ -23,4 +23,3 @@ for (const item of countiresMap) {
 for (const [country , capital] of countiresMap) {
   console.log(country , capital);
 }
-
