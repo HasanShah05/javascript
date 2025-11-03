@@ -107,16 +107,32 @@ const mixArray = ['hasan',20,'shah',100]
 console.log(getStringList(mixArray));
 
 //QUESTION NO 17
+console.clear()
+
+const sum = numbers.reduce((acc,cur) => acc + cur)
+console.log(sum);
 
 //QUESTION NO 18
 
-//QUESTION NO 19
+const sentence = countries.reduce((acc,curr,index) => {
+  if (index === countries.length -1) {
+    return acc + ' and ' + curr
+  }
+  else{
+    return acc + ', ' + curr
+  }
+}) + ' are north european countries'
+console.log(sentence);
 
 //QUESTION NO 20
 
+const namesGeater7 = names.some(n => n.length > 7)
+console.log(namesGeater7);
+
 //QUESTION NO 21
 
-//QUESTION NO 22
+const cointainsLand = countries.every((country) => country.includes('land'))
+console.log(cointainsLand);
 
 //QUESTION NO 23
 
