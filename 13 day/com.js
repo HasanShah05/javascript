@@ -80,3 +80,31 @@ for (let i = 0; i < countries.length; i++) {
   console.log(countries[i][0], countries[i][1])
 }
 console.timeEnd('Regular for loop')
+
+console.info('30 days of javascript is trending on github');
+
+console.assert(4>3, '4 is greater than 3')
+console.assert(3>4, '3 is not greater than 4')
+
+
+console.group('Names')
+console.log(names)
+console.groupEnd()
+
+console.group('Countries')
+console.log(countries)
+console.groupEnd()
+
+console.group('Users')
+console.log(user)
+console.log(users)
+console.groupEnd()
+
+const counter = () => {
+  console.count('the gunction has been called')
+}
+counter()
+counter()
+counter()
+
+console.clear()
