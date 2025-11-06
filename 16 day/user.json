@@ -1,0 +1,42 @@
+{
+    "users":[
+        {
+          "fistName":"Hasan",
+          "lastName":"Shah",
+          "age":20,
+          "email":"hasan@gmail.com"
+        },
+        {
+            "firstName":"Alex",
+            "lastName":"James",
+            "age":25,
+            "email":"alex@gmail.com"
+        }
+    ]
+}
+
+{
+    "Alex":{
+        "email":"alex@gmail.com",
+        "skills":[
+            "html",
+            "css",
+            "javascript"
+        ],
+        "isLoggedIn": true,
+        "age": 20,
+        "points":50
+    },
+    "Hasan":{
+        "email":"hasan@gmail.com",
+        "skills":[
+            "excel",
+            "javascript",
+            "css",
+            "react"
+        ],
+        "isLoggedIn":false,
+        "age":20,
+        "points":55
+    }    
+}
