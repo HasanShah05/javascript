@@ -30,3 +30,14 @@ doPromise
 .then(error => console.log(error))
 .catch(result => console.log(result))
 
+const square = async function (n) {
+    return n * n
+}
+
+async function run() {
+    const value = await square(2)
+    console.log(value);
+}
+run();
+
+
