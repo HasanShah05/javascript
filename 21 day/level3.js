@@ -46,9 +46,7 @@ date.textContent = cuurentdate()
       date.style.margin = 'auto';
       date.style.padding = '6px'
       date.style.textAlign = 'center';
-      date.style.fontSize = '12px';
-      date.style.fontWeight = '400';
-      date.style.width = '40%';
+      date.style.width = '20%';
 
 setInterval( () => {
     date.style.backgroundColor = colour()
@@ -63,12 +61,16 @@ for (let item of listItems) {
 
 for (const item of listItems) {
     if (item.textContent.endsWith('Done')) {
-        item.style.backgroundColor = 'green'
+        item.style.backgroundColor = '#72dc72ff'
     }
     else if (item.textContent.endsWith('Ongoing')) {
-        item.style.backgroundColor = 'yellow'
+        item.style.backgroundColor = '#efef3eff'
     }
     else if (item.textContent.endsWith('Coming')) {
-        item.style.backgroundColor = 'red'
+        item.style.backgroundColor = '#f14d6eff'
+
+        
     }
+     item.style.fontFamily = 'san-serif';
+        item.style.marginRight = '50px';
 }
