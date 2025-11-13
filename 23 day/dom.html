@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 23rd of learning js.</title>
+</head>
+<body>
+    <button>Click Me</button>
+    <button onclick="clickMe()"> click here</button>
+    <button class="btn">Double Click</button>
+</body>
+<script>
+    const button = document.querySelector('button')
+    button.addEventListener('click', e => {
+        console.log('hello haasn', e);
+    })
+
+    const clickMe = () => {
+        alert('We can attach an event as well')
+    }
+
+    const button2 = document.querySelector('.btn')
+    button2.addEventListener('mouseenter', e => {
+        console.log('Alert on double click');
+        button2.style.color = 'blue'
+    })
+
+    button2.addEventListener('mouseleave', e => {
+        button2.style.color = 'red'
+    })
+
+    button2.addEventListener('mousemove', e => {
+        button2.style.color = 'yellow'
+    })
+    button2.style.color = 'green'
+</script>
+</html>

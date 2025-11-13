@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI - Application</title>
+</head>
+<body>
+    <h1>Body Mass Index Calculator</h1>
+
+    Mass: <input type="text" name="" id="mass" placeholder="Enter mass in kg"><br><br>
+    Height: <input type="text" name="" id="height" placeholder="Enter Heigth in centimeters"><br><br>
+    <button>Calculate BMI</button>
+
+    <br><br><br>
+
+    Enter anything:  <input type="text" name="" id="say" placeholder="Type something">
+    <p></p> <br><br><br>
+
+        <h3>Key events: Press any key</h3>
+
+
+</body>
+<script>
+    let mass = document.querySelector('#mass')
+    let height = document.querySelector('#height')
+    let button = document.querySelector('button')
+    let say = document.querySelector('#say')
+    let p = document.querySelector('p')
+
+   button.addEventListener('click', e => {
+    const massVal = parseFloat(mass.value);
+    const heightCm = parseFloat(height.value);
+    const heightM = heightCm / 100;   // ✅ convert cm → m
+
+    const bmi = massVal / (heightM ** 2);
+    alert(`Your BMI is ${bmi.toFixed(2)}`);
+});
+
+    say.addEventListener('input', e => {
+        p.textContent = e.target.value
+    })
+
+     document.body.addEventListener('keypress', e => {
+        alert(e.keyCode)
+      })
+
+</script>
+</html>
