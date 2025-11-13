@@ -9,3 +9,11 @@ function outerFunction() {
 const innerFunc = outerFunction()
 
 console.log(innerFunc());
+
+
+let name = prompt('Enter your name:')
+if (name == 'hasan') {
+    console.log('welcome:', name);
+} else {
+    console.log(error);
+}
