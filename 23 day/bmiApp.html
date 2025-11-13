@@ -31,7 +31,7 @@
    button.addEventListener('click', e => {
     const massVal = parseFloat(mass.value);
     const heightCm = parseFloat(height.value);
-    const heightM = heightCm / 100;   // ✅ convert cm → m
+    const heightM = heightCm / 100;  
 
     const bmi = massVal / (heightM ** 2);
     alert(`Your BMI is ${bmi.toFixed(2)}`);
